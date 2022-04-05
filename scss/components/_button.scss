@@ -1,0 +1,10 @@
+.btn{
+    border: none;
+    color: white;
+    font-family: $body-font;
+    background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    padding: 16px 24px;
+    border-radius: 30px;
+    font-size: 18px;
+    box-shadow: rgb(17 17 26 / 10%) 0px 4px 16px, rgb(17 17 26 / 5%) 0px 8px 32px;
+}

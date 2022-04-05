@@ -1,0 +1,39 @@
+.step{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 25px 40px;
+    background-color: $gray-light;
+    border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 6px 8px 0px;
+    &__number{
+        font-family: $body-font;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        font-size: 14px;
+        left: -10px;
+        color: white;
+        width: 23px;
+        height: 23px;
+        padding-top: 2px;
+        background-color: $primary;
+        border-radius: 50%;
+    }
+    & p {
+        font-weight: 700;
+        margin: 0;
+    }
+    & i {
+        color: gray;
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    &--highlighting{
+        background-color: $primary-light;
+        & i {
+            color: $primary;
+        }
+    }
+}

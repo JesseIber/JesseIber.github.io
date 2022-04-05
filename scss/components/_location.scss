@@ -1,0 +1,15 @@
+.location{
+    padding: 10px;
+    display: flex;
+    background-color: $gray;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: $dark;
+    &__icon{
+        margin-right: 15px;
+    }
+    & p {
+        margin: 0;
+    }
+}

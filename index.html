@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/app.css">
     <title>Ohmyfood</title>
 </head>
+
 <body>
+    <header class="navbar">
+        <div class="navbar__logo">
+            <h1>ohmyfood</h1>
+        </div>
+    </header>
+    <main>
+        <div class="location">
+            <i class="location__icon fa-solid fa-location-dot"></i>
+            <p>Paris, Belleville</p>
+        </div>
+        <div class="jumbotron">
+            <h1 class="jumbotron__title">Réservez le menu qui vous convient</h1>
+            <p class="jumbotron__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <div class="jumbotron__action">
+                <button class="btn">Explorer nos restaurants</button>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Fonctionnement</h1>
+            <div class="flex-container">
+                <div class="flex-col">
+                    <div class="step">
+                        <span class="step__number">1</span>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Choisissez un restaurant</p>
+                    </div>
+                </div>
+                <div class="flex-col">
+                    <div class="step">
+                        <span class="step__number">2</span>
+                        <i class="fa-solid fa-list"></i>
+                        <p>Composez votre menu</p>
+                    </div>
+                </div>
+                <div class="flex-col">
+                    <div class="step step--highlighting">
+                        <span class="step__number">3</span>
+                        <i class="fa-solid fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-gray-light">
+            <h1>Restaurants</h1>
+            <div class="flex-container">
+                <div class="flex-col">
+                    <div class="card">
+                        <span class="card__pill">Nouveau</span>
+                        <img class="card__image" src="/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"/ alt="La palette du goût">
+                        <div class="card__content">
+                            <div class="card__text">
+                                <p>La palette du goût</p>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col"></div>
+                <div class="flex-col"></div>
+                <div class="flex-col"></div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
