@@ -1,4 +1,4 @@
-.jumbotron{
+.jumbotron {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,62 +8,144 @@
     font-family: $body-font;
     background-color: $gray-light;
     min-height: 400px;
-    &__title{
+
+    &__title {
         font-size: 56px;
-        @include responsive(mobile){
+
+        @include responsive(mobile) {
             padding: 0 26px;
             font-size: 26px;
         }
     }
-    &__subtitle{
+
+    &__subtitle {
         color: gray;
         font-size: 32px;
-        @include responsive(mobile){
+
+        @include responsive(mobile) {
             font-size: 18px;
         }
     }
-    &__action{
+
+    &__action {
         margin-top: 20px;
         margin-bottom: 15px;
     }
-    @include responsive(mobile){
+
+    @include responsive(mobile) {
         min-height: 250px;
     }
 }
 
-.container{
+
+
+.container {
     padding: 45px 140px;
+
+    &--menu {
+        background-color: $gray-light;
+        min-height: 100vh;
+        padding: 10px 20px;
+    }
+
+    @include responsive(mobile) {
+        &--menu {
+            padding: 0;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            transform: translateY(-40px);
+        }
+    }
 }
 
-.flex-container{
+.menu {
+    padding: 18px 300px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & h1 {
+            margin-bottom: 0;
+            font-family: $head-font;
+            font-weight: normal;
+        }
+    }
+
+    &__title {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            top: 22px;
+            background-color: $terciary;
+        }
+    }
+
+    & svg {
+        cursor: pointer;
+        height: 22px;
+        width: 26px;
+        fill: white;
+        stroke: black;
+        stroke-width: 20px;
+
+        &:hover {
+            fill: $primary;
+            stroke: white;
+        }
+    }
+
+    @include responsive(mobile) {
+        padding: 18px 26px;
+    }
+}
+
+
+.flex-container {
     margin: 30px 0;
     display: flex;
     flex-flow: row wrap;
     gap: 50px;
 }
 
-.flex-col{
+.flex-col {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-.flex-auto{
+.flex-auto {
     display: flex;
     flex-direction: column;
     flex: auto;
 }
 
-@include responsive(mobile)
-{
-    .flex-container{
+.mt-5{
+    margin-top: 16px;
+}
+
+.mb-0{
+    margin-bottom: 0;
+}
+
+@include responsive(mobile) {
+    .flex-container {
         flex-direction: column;
         grid-gap: 25px;
     }
-    .flex-col{
+
+    .flex-col {
         flex: 1;
     }
-    .container{
+
+    .container {
         padding: 45px 25px;
     }
 }

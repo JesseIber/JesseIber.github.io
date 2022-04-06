@@ -1,15 +1,28 @@
 .navbar{
     display: flex;
+    position: relative;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     min-height: 60px;
+    background-color: white;
     box-shadow: 0 0 5px 5px rgb(224, 224, 224);
+    &__back{
+        position: absolute;
+        color: $dark;
+        left: 20px;
+        font-size: 32px;
+    }
     &__logo{
         padding: 15px;
         & h1{
             font-family: $head-font;
             margin: 0;
+        }
+    }
+    @include responsive(mobile){
+        &__back{
+            font-size: 22px;
         }
     }
 }

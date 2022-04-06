@@ -1,23 +1,68 @@
-.card{
+%cardbase{
     display: flex;
+    position: relative;
     flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+}
+
+.card{
+    @extend %cardbase;
+    border-radius: 20px;
     &__pill{
         position: absolute;
+        background-color: $terciary;
+        font-family: $body-font;
+        color: gray;
+        right: 12px;
+        top: 12px;
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 3px;
     }
     &__image{
+        object-fit: cover;
+        max-height: 180px;
         width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     &__content{
-        padding: 10px;
         display: flex;
-        background-color: white;
-        & p {
-            margin: 0;
-        }
+        padding: 16px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    &__title{
+        margin-bottom: 6px;
+        font-weight: 700;
+    }
+    &__subject{
+        margin-bottom: 0;
     }
     &__text{
         display: flex;
         flex-direction: column;
         flex-grow: 1;
+    }
+    & svg{
+        cursor: pointer;
+        height: 22px;
+        width: 26px;
+        fill: white;
+        stroke: black;
+        stroke-width: 20px;
+        &:hover{
+            fill: $primary;
+            stroke: white;
+        }
+    }
+    @include responsive(mobile){
+        &__image{
+            height: 150px;
+        }
+        &__pill{
+            font-size: 14px;
+        }
     }
 }

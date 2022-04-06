@@ -1,0 +1,38 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 150px;
+    background-color: $dark;
+    color: white;
+    &__title{
+        font-size: 18px;
+        font-family: $head-font;
+    }
+    &__list{
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        font-family: $body-font;
+        margin: 10px 0;
+        & a{
+            color: white;
+        }
+        & i {
+            width: 25px;
+            font-size: 12px;
+        }
+    }
+    @include responsive(mobile){
+        align-items: flex-start;
+        &__list{
+            display: block;
+        }
+    }
+}

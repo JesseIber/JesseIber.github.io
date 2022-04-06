@@ -1,0 +1,68 @@
+.order-card{
+    @extend %cardbase;
+    cursor: pointer;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: space-between;
+    & p {
+        overflow: hidden;
+        white-space: nowrap;        
+        text-overflow: ellipsis;
+    }
+    & p:nth-child(2){
+        font-size: 14px;
+    }
+    &__info{
+        /* Définir un max-width: pour que le text ... */
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        max-width: 220px;
+    }
+    &__title{
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+    &__price{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex: 1;
+        font-weight: bold;
+        padding: 10px;
+    }
+    &__action{
+        font-size: 18px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        // width: 50px;
+        width: 0;
+        overflow: hidden;
+        background-color: $terciary;
+    }
+    &:hover{
+        .order-card__action{
+            animation: openOrderMenu .5s forwards;
+            i {
+                animation: flipIcon .5s forwards;
+            }
+        }
+
+    }
+}
+
+@keyframes openOrderMenu {
+    to{
+        width: 50px;
+    }
+}
+
+@keyframes flipIcon {
+    to{
+        transform: rotate(360deg);
+    }
+}
