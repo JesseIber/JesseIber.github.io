@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Shrikhand";
   src: url("../../fonts/Shrikhand-Regular.ttf");
@@ -56,6 +55,10 @@ img {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 24px;
+  }
+
+  .fw-menu-pict {
+    max-height: 250px;
   }
 }
 .jumbotron {
@@ -151,6 +154,14 @@ img {
 .menu svg:hover {
   fill: #9356DC;
   stroke: white;
+}
+.menu__action {
+  width: 100%;
+  text-align: center;
+}
+.menu__action button {
+  padding: 16px 56px;
+  font-size: 16px;
 }
 @media screen and (max-width: 768px) {
   .menu {
@@ -409,22 +420,20 @@ img {
   cursor: pointer;
   flex-direction: row;
   border-radius: 10px;
-  justify-content: space-between;
-}
-.order-card p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  flex-flow: wrap;
 }
 .order-card p:nth-child(2) {
   font-size: 14px;
 }
 .order-card__info {
-  /* Définir un max-width: pour que le text ... */
-  display: flex;
-  flex-direction: column;
+  flex: 1;
+  min-width: 0;
   padding: 10px;
-  max-width: 220px;
+}
+.order-card__info p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .order-card__title {
   font-weight: bold;
@@ -434,7 +443,6 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  flex: 1;
   font-weight: bold;
   padding: 10px;
 }
@@ -457,6 +465,29 @@ img {
   animation: flipIcon 0.5s forwards;
 }
 
+.delay-3, .delay-2, .delay-1 {
+  opacity: 0;
+  transform: translateY(30%);
+}
+
+.delay-1 {
+  animation: fade 0.4s ease-in-out 0.2s forwards;
+}
+
+.delay-2 {
+  animation: fade 0.4s ease-in-out 0.4s forwards;
+}
+
+.delay-3 {
+  animation: fade 0.4s ease-in-out 0.5s forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes openOrderMenu {
   to {
     width: 50px;
