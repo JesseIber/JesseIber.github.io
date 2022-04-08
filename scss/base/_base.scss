@@ -53,3 +53,27 @@ img{
         max-height: 250px;
     }
 }
+
+.delay-1{
+    @extend %fade;
+    animation: Cardfade .4s ease-in-out .2s forwards;
+}
+.delay-2{
+    @extend %fade;
+    animation: Cardfade .4s ease-in-out .4s forwards;
+}
+.delay-3{
+    @extend %fade;
+    animation: Cardfade .4s ease-in-out .5s forwards;
+}
+.delay-4{
+    @extend %fade;
+    animation: Cardfade .4s ease-in-out .6s forwards;
+}
+
+@keyframes Cardfade {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

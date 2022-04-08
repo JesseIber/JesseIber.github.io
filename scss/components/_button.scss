@@ -8,4 +8,8 @@
     border-radius: 30px;
     font-size: 18px;
     box-shadow: rgb(17 17 26 / 10%) 0px 4px 16px, rgb(17 17 26 / 5%) 0px 8px 32px;
+    &:hover{
+        background: linear-gradient(180deg, lighten(rgba(255,121,218,1), 5%) 0%, lighten(rgba(147,86,220,1), 5%) 100%);
+        box-shadow: rgb(17 17 26 / 20%) 0px 8px 16px, rgb(17 17 26 / 5%) 0px 8px 32px;
+    }
 }

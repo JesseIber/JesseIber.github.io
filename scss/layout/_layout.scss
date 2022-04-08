@@ -95,7 +95,7 @@
         fill: white;
         stroke: black;
         stroke-width: 20px;
-
+        transition: .3s ease-in-out;
         &:hover {
             fill: $primary;
             stroke: white;
@@ -110,9 +110,6 @@
             font-size: 16px;
         }
     }
-    @include responsive(mobile) {
-        padding: 18px 26px;
-    }
 }
 
 
@@ -126,7 +123,7 @@
 .flex-col {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1 1 250px;
 }
 
 .flex-auto {
@@ -155,5 +152,20 @@
 
     .container {
         padding: 45px 25px;
+    }
+    .menu{
+        padding: 18px 26px;
+    }
+}
+
+@include responsive(tablet){
+    .flex-container {
+        flex-direction: column;
+    }
+    .flex-col{
+        flex: 1;
+    }
+    .menu{
+        padding: 18px 26px;
     }
 }

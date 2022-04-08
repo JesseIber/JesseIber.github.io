@@ -52,6 +52,7 @@
         fill: white;
         stroke: black;
         stroke-width: 20px;
+        transition: .3s ease-in-out;
         &:hover{
             fill: $primary;
             stroke: white;
