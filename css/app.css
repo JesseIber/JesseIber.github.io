@@ -505,14 +505,6 @@ img {
   animation: flipIcon 0.5s forwards;
 }
 
-@media (hover: hover) and (any-pointer: coarse) {
-  .order-card {
-    animation: openOrderMenu 0.5s forwards;
-  }
-  .order-card i {
-    animation: flipIcon 0.5s forwards;
-  }
-}
 .delay-1, .delay-2, .delay-3, .delay-4 {
   opacity: 0;
   transform: translateY(30%);

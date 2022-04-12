@@ -51,15 +51,6 @@
 
     }
 }
-//test
-@media (hover: hover) and (any-pointer: coarse) {
-    .order-card {
-        animation: openOrderMenu .5s forwards;
-            i {
-                animation: flipIcon .5s forwards;
-            }
-    }
-}
 
 %fade {
     opacity: 0;
