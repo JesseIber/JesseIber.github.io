@@ -443,7 +443,7 @@ img {
   stroke-width: 20px;
   transition: 0.3s ease-in-out;
 }
-.card svg:hover, .card svg:active {
+.card svg:hover {
   fill: #9356DC;
   stroke: white;
 }
