@@ -443,7 +443,7 @@ img {
   stroke-width: 20px;
   transition: 0.3s ease-in-out;
 }
-.card svg:hover {
+.card svg:hover, .card svg:active {
   fill: #9356DC;
   stroke: white;
 }
@@ -498,10 +498,10 @@ img {
   overflow: hidden;
   background-color: #99E2D0;
 }
-.order-card:hover .order-card__action {
+.order-card:hover .order-card__action, .order-card:active .order-card__action {
   animation: openOrderMenu 0.5s forwards;
 }
-.order-card:hover .order-card__action i {
+.order-card:hover .order-card__action i, .order-card:active .order-card__action i {
   animation: flipIcon 0.5s forwards;
 }
 

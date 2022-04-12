@@ -41,7 +41,7 @@
         overflow: hidden;
         background-color: $terciary;
     }
-    &:hover{
+    &:hover, &:active{
         .order-card__action{
             animation: openOrderMenu .5s forwards;
             i {
