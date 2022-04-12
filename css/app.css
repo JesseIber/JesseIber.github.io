@@ -498,13 +498,21 @@ img {
   overflow: hidden;
   background-color: #99E2D0;
 }
-.order-card:hover .order-card__action, .order-card:active .order-card__action {
+.order-card:hover .order-card__action {
   animation: openOrderMenu 0.5s forwards;
 }
-.order-card:hover .order-card__action i, .order-card:active .order-card__action i {
+.order-card:hover .order-card__action i {
   animation: flipIcon 0.5s forwards;
 }
 
+@media (hover: hover) {
+  .order-card {
+    animation: openOrderMenu 0.5s forwards;
+  }
+  .order-card i {
+    animation: flipIcon 0.5s forwards;
+  }
+}
 .delay-1, .delay-2, .delay-3, .delay-4 {
   opacity: 0;
   transform: translateY(30%);
