@@ -505,7 +505,7 @@ img {
   animation: flipIcon 0.5s forwards;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .order-card {
     animation: openOrderMenu 0.5s forwards;
   }

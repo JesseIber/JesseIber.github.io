@@ -52,7 +52,7 @@
     }
 }
 
-@media (hover: hover){
+@media (hover: hover) and (pointer: fine) {
     .order-card {
         animation: openOrderMenu .5s forwards;
             i {
