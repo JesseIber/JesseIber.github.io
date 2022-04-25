@@ -544,7 +544,6 @@ img {
   width: 120px;
   height: 120px;
   animation: spin 1s linear infinite;
-  animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 @keyframes spin {
