@@ -40,11 +40,16 @@
         width: 0;
         overflow: hidden;
         background-color: $terciary;
+        transition: width .5s;
     }
     &:hover{
         .order-card__action{
-            animation: openOrderMenu .5s forwards;
-            i {
+            // animation: openOrderMenu .5s forwards;
+            // i {
+            //     animation: flipIcon .5s forwards;
+            // }
+            width: 50px;
+            i{
                 animation: flipIcon .5s forwards;
             }
         }
